@@ -21,3 +21,12 @@ export async function GetAlldata( array ){
 
     return data
 }
+
+export async function GetType( url ){
+  let data = {}
+
+  await fetch (url).then((data)=> data.json()).then((datos) => data = datos)
+
+  return data
+  
+}
